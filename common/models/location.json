@@ -1,0 +1,33 @@
+{
+  "name": "Location",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "locationname": {
+      "type": "string",
+      "required": true
+    },
+    "beaconminor": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "site": {
+      "type": "belongsTo",
+      "model": "Site",
+      "foreignKey": ""
+    },
+    "nudges": {
+      "type": "hasMany",
+      "model": "Nudge",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}

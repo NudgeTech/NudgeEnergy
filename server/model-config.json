@@ -1,0 +1,57 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "nudgeenergyDB"
+  },
+  "AccessToken": {
+    "dataSource": "nudgeenergyDB",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "nudgeenergyDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "nudgeenergyDB",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "nudgeenergyDB",
+    "public": false
+  },
+  "Owner": {
+    "dataSource": "nudgeenergyDB",
+    "public": true
+  },
+  "Client": {
+    "dataSource": "nudgeenergyDB",
+    "public": true
+  },
+  "Site": {
+    "dataSource": "nudgeenergyDB",
+    "public": true
+  },
+  "Location": {
+    "dataSource": "nudgeenergyDB",
+    "public": true
+  },
+  "NudgeUser": {
+    "dataSource": "nudgeenergyDB",
+    "public": true
+  },
+  "UserGroup": {
+    "dataSource": "nudgeenergyDB",
+    "public": true
+  },
+  "Nudge": {
+    "dataSource": "nudgeenergyDB",
+    "public": true
+  }
+}

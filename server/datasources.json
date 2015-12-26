@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "nudgeenergyDB": {
+    "host": "localhost",
+    "port": "27017",
+    "database": "nudgeenergyDB",
+    "username": "",
+    "password": "",
+    "name": "nudgeenergyDB",
+    "connector": "mongodb"
+  }
+}

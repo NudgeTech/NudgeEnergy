@@ -1,0 +1,50 @@
+{
+  "name": "Nudge",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "message": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "date_created": {
+      "type": "date",
+      "required": true
+    },
+    "complete": {
+      "type": "boolean"
+    },
+    "created_by": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "location": {
+      "type": "belongsTo",
+      "model": "Location",
+      "foreignKey": ""
+    },
+    "nudgeUser": {
+      "type": "belongsTo",
+      "model": "NudgeUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}
