@@ -19,6 +19,14 @@
   "parse": {
   },
   "routes": {
+      "loopback#rest": {
+      "paths": ["${restApiRoot}"]
+    },
+    "./middleware/clientIDcheck": {
+      "paths": "/clientIDcheck"
+    }
+
+
   },
   "files": {
   },
