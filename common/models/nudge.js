@@ -3,8 +3,10 @@ module.exports = function(Nudge) {
 	Nudge.observe('before save', function (ctx, next) {
 		  if (ctx.instance) {
 		    ctx.instance.date_created = new Date();
+		    ctx.instance.complete = false;
 		  } else {
 		    ctx.data.date_created = new Date();
+		    ctx.instance.complete = false;
 		  }
 		  next();
 	});
