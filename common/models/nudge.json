@@ -15,7 +15,7 @@
     },
     "date_created": {
       "type": "date",
-      "required": true
+      "required": false
     },
     "complete": {
       "type": "boolean"
@@ -23,13 +23,6 @@
     "created_by": {
       "type": "string",
       "required": true
-    },
-    "user": {
-      "type": "string",
-      "required": true
-    },
-    "location": {
-      "type": "string"
     }
   },
   "validations": [],
