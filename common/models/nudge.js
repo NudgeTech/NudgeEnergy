@@ -6,7 +6,7 @@ module.exports = function(Nudge) {
 		    ctx.instance.complete = false;
 		  } else {
 		    ctx.data.date_created = new Date();
-		    ctx.instance.complete = false;
+		    ctx.data.complete = false;
 		  }
 		  next();
 	});

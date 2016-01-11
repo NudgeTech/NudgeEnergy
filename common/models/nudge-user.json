@@ -33,7 +33,6 @@
     }
   },
   "acls": [
-    
     {
       "accessType": "*",
       "principalType": "ROLE",
