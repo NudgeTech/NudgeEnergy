@@ -53,5 +53,9 @@
   "Nudge": {
     "dataSource": "nudgeenergyDB",
     "public": true
+  },
+  "Asset": {
+    "dataSource": "nudgeenergyDB",
+    "public": true
   }
 }

@@ -1,0 +1,32 @@
+{
+  "name": "Asset",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "string"
+    },
+    "LastChecked": {
+      "type": "date"
+    },
+    "Type": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "location": {
+      "type": "belongsTo",
+      "model": "Location",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": []
+}
